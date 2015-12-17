@@ -1,6 +1,6 @@
 {
   "name": "log4j-wrapper",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A wrapper for java webview to allow logging in javascript",
   "main": "index.js",
   "scripts": {
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spidasoftware/log4j-wrapper.git"
+    "url": "git+https://github.com/tgsoverly/log4j-wrapper.git"
   },
   "author": "tgsoverly",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/spidasoftware/log4j-wrapper/issues"
+    "url": "https://github.com/tgsoverly/log4j-wrapper/issues"
   },
-  "homepage": "https://github.com/spidasoftware/log4j-wrapper#readme"
+  "homepage": "https://github.com/tgsoverly/log4j-wrapper#readme"
 }
