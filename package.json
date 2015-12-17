@@ -1,6 +1,6 @@
 {
   "name": "log4j-wrapper",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "A wrapper for java webview to allow logging in javascript",
   "main": "index.js",
   "scripts": {
