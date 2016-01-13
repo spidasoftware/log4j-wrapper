@@ -34,9 +34,14 @@ module.exports = {
       Find the calling function to log it for debugging
     */
     getCaller(){
-      var stack = new Error().stack;
-      var lines = stack.split('\n');
-      return lines[3]+": "
+      var caller = "";
+      try {
+       i.dont.exist += 0; //doesn't exist- that's the point
+      } catch (e) {
+        var lines = e.stack.split('\n');
+        caller = lines[3].replace(/\s{3,}at\s/, "")+": ";
+      }
+      return caller;
     },
 
     isErrorEnabled:function(){
