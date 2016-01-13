@@ -16,18 +16,27 @@ module.exports = {
     },
     info:function(msg){
       if(this.isInfoEnabled()){
-        console.log("INFO: "+msg)
+        console.log("INFO: "+this.getCaller()+msg)
       }
     },
     debug:function(msg){
       if(this.isDebugEnabled()){
-        console.log("DEBUG: "+msg)
+        console.log("DEBUG: "+this.getCaller()+msg)
       }
     },
     trace:function(msg){
       if(this.isTraceEnabled()){
-        console.log("TRACE: "+msg)
+        console.log("TRACE: "+this.getCaller()+msg)
       }
+    },
+
+    /**
+      Find the calling function to log it for debugging
+    */
+    getCaller(){
+      var stack = new Error().stack;
+      var lines = stack.split('\n');
+      return lines[3]+": "
     },
 
     isErrorEnabled:function(){
