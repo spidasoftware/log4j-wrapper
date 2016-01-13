@@ -1,10 +1,10 @@
 {
   "name": "log4j-wrapper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A wrapper for java webview to allow logging in javascript",
-  "main": "index.js",
+  "main": "log4j-wrapper.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tgsoverly/log4j-wrapper/issues"
   },
-  "homepage": "https://github.com/tgsoverly/log4j-wrapper#readme"
+  "homepage": "https://github.com/tgsoverly/log4j-wrapper#readme",
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  }
 }
